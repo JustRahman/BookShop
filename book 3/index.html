@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-secondary">
+        <div class="container-xl">
+            <a class="navbar-brand text-light" href="#">Bookshop</a>
+            <a class="navbar-brand text-light" href="#">
+                <i class="bi bi-bag"></i>
+                <span class="position-absolute badge badge-light badge-pill mt-n1 ml-n2" id="cart">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container-xl py-2 py-sm-3">
+        <div class="row">
+            <div class="col-md-8 col-lg-9 py-2 py-sm-3">
+                <div class="d-flex justify-content-between align-items-center border-bottom">
+                    <div class="h4 text-primary">
+                        Sebedim
+                    </div>
+                    <button class="btn btn-light btn-sm text-lg text-secondary" onclick="emptyCart()">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                </div>
+                <div id="products"></div>
+            </div>
+            <div class="col-md-4 col-lg-3 py-2 py-sm-3">
+                <div class="d-flex justify-content-end align-items-center border-bottom">
+                    <div class="h4 text-primary">
+                        Hasabym
+                    </div>
+                </div>
+                <div class="text-right my-2 my-sm-3">
+                    <div class="h5">
+                        <span class="small text-secondary">
+                            <span id="products-amount">0</span> Haryt <i class="bi bi-caret-right-fill"></i>
+                        </span>
+                        <span id="products-price">0.00</span> <small>TMT</small>
+                    </div>
+                    <div class="h5">
+                        <span class="small text-secondary">
+                            Eltip bermek <i class="bi bi-caret-right-fill"></i>
+                        </span>
+                        <span id="delivery-fee">0.00</span> <small>TMT</small>
+                    </div>
+                    <div class="h6 text-secondary">
+                        <i class="bi bi-check-circle-fill text-success"></i> 24 sagadyň içinde eltip bermek
+                    </div>
+                    <div class="h4 text-danger bg-light rounded p-2 p-sm-3">
+                        <span id="total-price">0.00</span> <small>TMT</small>
+                    </div>
+                </div>
+                <button class="btn btn-danger btn-lg btn-block">
+                    Sargyt et <i class="bi bi-caret-right-fill"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>
